@@ -28,11 +28,11 @@ You have to have Ruby installed on your system with the Bundler gem. Just   ente
 Afterwards you can easily change the original SCSS files and compile the styles with this command:
 
 ```bash
-sass --scss --style=compact src/* build/*
+scripts/compile
 ```
 
 For even more convenience let it watch the ```src```directory:
 
 ```bash
-sass --scss --style=compact --watch src:build
+scripts/watch
 ```
