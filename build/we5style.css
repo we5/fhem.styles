@@ -89,7 +89,7 @@ pre.log a[href]:last-of-type { margin-top: 1em; }
 #logo { background: #08c; border-bottom: solid 1px #007aba; color: #fff !important; font-size: 32px; font-weight: bold; height: 33px; left: 0px; padding-left: 20px; padding-top: 7px; position: fixed; top: 0px; width: 210px; z-index: 1000; }
 #logo::before { content: "berry // "; font-size: 16px; font-weight: 200; }
 
-#content { left: 230px; position: absolute; right: 20px; top: 67px; padding-bottom: 5em; }
+#content { left: 230px; padding-bottom: 5em; position: absolute; right: 20px; top: 67px; }
 
 #right { bottom: 20px; left: 180px; position: absolute; right: 10px; top: 20px; }
 
@@ -134,5 +134,3 @@ pre.log a[href]:last-of-type { margin-top: 1em; }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) { * { font-size: 16px; }
   .devType, h2, h3, h4 { font-size: 24px; }
   svg, svg.icon { width: 26px; height: 26px; } }
-
-/*# sourceMappingURL=we5style.css.map */
