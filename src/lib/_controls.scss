@@ -1,0 +1,49 @@
+.set,
+.attr {
+	float: left;
+}
+
+.slider_widget,
+.colorpicker_hue {
+  -webkit-user-select: none;
+          user-select: none;
+  outline: none;
+}
+
+.slider_widget {
+  .slider {
+  	border-radius: 8px;
+    background: #fefefe;
+    outline: none;
+    width: 250px;
+  }
+
+  .handle {
+    border: 2px solid;
+    color: #ccc;
+    cursor: pointer;
+    height: 20px;
+    line-height: 22px;
+    position: relative;
+    text-align: center;
+    width: 50px;
+    -moz-user-select: -moz-none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+
+    &:hover,
+    &.handle:active {
+      color: #aaa;
+      cursor: pointer;
+    }
+  }
+}
+
+.set {
+  // Timepicker
+  .set {
+  	margin-bottom: 2px;
+  	margin-top: 3px;
+  }
+}

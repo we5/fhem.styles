@@ -1,0 +1,46 @@
+.ex {
+  border: 1px solid #ccc;
+  color: #ccc;
+  font-size: 10px;
+  max-height: 10em;
+  overflow: scroll;
+  padding: 10px;
+}
+
+.makeTable,
+.makeSelect {
+	clear: both;
+}
+
+.makeSelect {
+  border-bottom: solid 1px $light_grey_color;
+  border-top: solid 1px $light_grey_color;
+  margin: 2em 0;
+  padding-bottom: 10px;
+  padding-top: 10px;
+
+  & > form {
+    display: inline-block;
+
+    & > * {
+    	display: inline-block;
+      float: none;
+    }
+  }
+}
+
+.makeTable {
+  color: $highlight_color;
+  margin: 2em 0;
+
+  table {
+    color: #000;
+    margin-top: 1em;
+
+    &.internals {
+      td[colspan="2"] {
+        display: none;
+      }
+    }
+  }
+}

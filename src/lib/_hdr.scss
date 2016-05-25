@@ -1,0 +1,25 @@
+//
+// Command line
+// 
+#hdr {
+  background: $highlight_color;
+  border-bottom: solid 1px #007aba;
+  height: 40px;
+  left: 230px;
+  overflow: hidden;
+  position: fixed;
+  right: 0px;
+  top: 0px;
+  z-index: 1000;
+
+  input {
+  	background: #007aba;
+  	border-left: solid 1px #fff;
+  	border-right: solid 1px #fff;
+  	border: none;
+  	color: #fff;
+  	height: 20px;
+  	margin: 0;
+  	width: 600px;
+  }
+}

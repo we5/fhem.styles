@@ -1,0 +1,14 @@
+.roomoverview {
+  .devType {
+    color: $highlight_color;
+    font-family: 'dk Cond';
+    font-size: 1.5em;
+    margin-top: 2em;
+  }
+
+  tr:first-child {
+    .devType {
+      margin-top: 0;
+    }
+  }
+}

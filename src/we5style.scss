@@ -1,0 +1,165 @@
+@import 'lib/variables';
+
+@import 'lib/fonts';
+@import 'lib/base';
+
+//
+// FX
+//
+
+a,
+input,
+select,
+button,
+.handle {
+  transition: all .2s ease-in;
+}
+
+//
+// HELPERS
+//
+
+.wide {
+	width: 100%;
+}
+
+// ELEMENTS
+
+@import 'lib/controls';
+@import 'lib/readings_and_attributes';
+@import 'lib/roomoverview';
+
+//
+// COMPONENTS
+//
+
+#logo {
+  background: $highlight_color;
+  border-bottom: solid 1px #007aba;
+  color: #fff !important;
+  font-size: 32px;
+  font-weight: bold;
+  height: 33px;
+  left: 0px;
+  padding-left: 20px;
+  padding-top: 7px;
+  position: fixed;
+  top: 0px;
+  width: 210px;
+  z-index: 1000;
+
+  &::before {
+    content: "berry // ";
+    font-size: 16px;
+    font-weight: 200;
+  }
+}
+
+#content {
+	left: 230px;
+	position: absolute;
+	right: 20px;
+	top: 67px;
+}
+
+#right {
+	bottom: 20px;
+	left: 180px;
+	position: absolute;
+	right: 10px;
+	top: 20px;
+}
+
+#block {
+	border: 1px solid gray;
+	background: #f3f3f3;
+	padding: 0.7em;
+}
+
+#dist {
+	padding-top: 0.3em;
+}
+
+@import 'lib/menu';
+@import 'lib/hdr';
+
+/* Smartphones (landscape) ----------- */
+@media only screen
+and (min-width : 321px) {
+	* {
+		font-size: 16px;
+	}
+
+	.devType,
+	h2, h3, h4 {
+	  font-size: 24px;
+	}
+
+	svg,
+	svg.icon {
+		width: 20px;
+		height: 20px;
+	}
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen
+and (max-width : 320px) {
+	* {
+		font-size: 16px;
+	}
+
+	.devType,
+	h2, h3, h4 {
+   	font-size: 24px;
+	}
+
+	svg,
+	svg.icon {
+		width: 26px;
+		height: 26px;
+	}
+}
+
+/* iPads (landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape) {
+	* {
+		font-size: 16px;
+	}
+
+	.devType,
+	h2, h3, h4 {
+   	font-size: 24px;
+	}
+
+	svg,
+	svg.icon {
+		width: 20px;
+		height: 20px;
+	}
+}
+
+/* iPads (portrait) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait) {
+
+	* {
+		font-size: 16px;
+	}
+
+	.devType,
+	h2, h3, h4 {
+	   	font-size: 24px;
+	}
+
+	svg,
+	svg.icon {
+		width: 26px;
+		height: 26px;
+	}
+}
