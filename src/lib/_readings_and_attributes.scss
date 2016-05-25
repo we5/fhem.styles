@@ -1,6 +1,6 @@
 .ex {
-  border: 1px solid #ccc;
-  color: #ccc;
+  border: 1px solid $grey;
+  color: $grey;
   font-size: 10px;
   max-height: 10em;
   overflow: scroll;
@@ -13,11 +13,16 @@
 }
 
 .makeSelect {
-  border-bottom: solid 1px $light_grey_color;
-  border-top: solid 1px $light_grey_color;
+  border-bottom: solid 1px $light_grey;
+  border-top: solid 1px $light_grey;
   margin: 2em 0;
   padding-bottom: 10px;
   padding-top: 10px;
+
+  select + input,
+  select + .slider_widget {
+    margin-left: 5px;
+  }
 
   & > form {
     display: inline-block;
@@ -34,7 +39,7 @@
   margin: 2em 0;
 
   table {
-    color: #000;
+    color: $text_color;
     margin-top: 1em;
 
     &.internals {

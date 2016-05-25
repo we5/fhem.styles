@@ -11,4 +11,17 @@
       margin-top: 0;
     }
   }
+
+  // For links without icons
+  div:not([class="col2"]) {
+    a[style*="cursor"] {
+      @extend a.simple;
+    }
+  }
+
+  div.dval {
+    a {
+      @extend a.simple;
+    }
+  }
 }

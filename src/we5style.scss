@@ -3,6 +3,8 @@
 @import 'lib/fonts';
 @import 'lib/base';
 
+@import 'lib/ui_widget';
+
 //
 // FX
 //
@@ -25,6 +27,25 @@ button,
 
 // ELEMENTS
 
+pre.log {
+  font-family: monospace;
+  font-size: 12px;
+  margin: 0;
+
+  a[href] {
+    @extend %button;
+    display: inline-block;
+
+    &:first-of-type {
+      margin-bottom: 1em;
+    }
+
+    &:last-of-type {
+      margin-top: 1em;
+    }
+  }
+}
+
 @import 'lib/controls';
 @import 'lib/readings_and_attributes';
 @import 'lib/roomoverview';
@@ -34,9 +55,9 @@ button,
 //
 
 #logo {
-  background: $highlight_color;
-  border-bottom: solid 1px #007aba;
-  color: #fff !important;
+  background: $primary_color;
+  border-bottom: solid 1px $blue_darker;
+  color: $white !important;
   font-size: 32px;
   font-weight: bold;
   height: 33px;
@@ -71,8 +92,8 @@ button,
 }
 
 #block {
-	border: 1px solid gray;
-	background: #f3f3f3;
+	border: 1px solid $grey;
+	background: $grey;
 	padding: 0.7em;
 }
 

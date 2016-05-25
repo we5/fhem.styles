@@ -1,2 +1,29 @@
-$highlight_color: #08c;
-$light_grey_color: #efefef;
+// Color names
+
+$black: #404040;
+$white: #fff;
+
+$red: #f00;
+
+$blue: #08c;
+$blue_darker: #007aba;
+
+$grey: #aaa;
+$light_grey: #efefef;
+$very_light_grey: #fdfdfd;
+
+// Color meaning and states
+
+$text_color: $black;
+
+$primary_color: $blue;
+$highlight_color: $primary_color;
+
+$link_color: $black;
+$link--hover_color: $primary_color;
+
+$input-border_color: $grey;
+$input-border--hover_color: $primary_color;
+
+$button_color: $primary_color;
+$button--hover_color: $black;

@@ -8,19 +8,17 @@
   -webkit-user-select: none;
           user-select: none;
   outline: none;
-}
 
-.slider_widget {
   .slider {
   	border-radius: 8px;
-    background: #fefefe;
+    background: $white;
     outline: none;
     width: 250px;
   }
 
   .handle {
     border: 2px solid;
-    color: #ccc;
+    color: $grey;
     cursor: pointer;
     height: 20px;
     line-height: 22px;
@@ -34,7 +32,7 @@
 
     &:hover,
     &.handle:active {
-      color: #aaa;
+      color: $primary_color;
       cursor: pointer;
     }
   }

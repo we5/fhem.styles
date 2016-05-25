@@ -1,10 +1,39 @@
+%button {
+  background: $button_color;
+  border: 0;
+  color: $white;
+  cursor: pointer;
+	display: inline-block;
+  padding: 10px 20px;
+
+  &:hover {
+    background: $button--hover_color;
+  }
+}
+
+%input {
+  border-radius: 0;
+  border: solid 1px $input-border_color;
+  cursor: pointer;
+  margin: 0;
+  outline: 0;
+  padding: 10px;
+
+  &:hover,
+  &:active {
+    border-color: $input-border--hover_color;
+  }
+}
+
+// ====
+
 * {
 	font-family: 'dk Book', Arial, sans-serif;
 	font-size: 14px;
 }
 
 body {
-	background: #fff;
+	background: $white;
 }
 
 h2, h3, h4 {
@@ -19,12 +48,16 @@ img {
 }
 
 a {
-	color: #404040;
+	color: $link_color;
 	text-decoration: none;
 
   &:hover,
   &:active {
-  	color: $highlight_color;
+  	color: $primary_color;
+  }
+
+  &.simple {
+    text-decoration: underline;
   }
 }
 
@@ -32,25 +65,30 @@ table {
   border-collapse: collapse;
 	width: 100%;
 
-  .col3 a {
-  	padding: 5px;
-  }
-
   &.block {
-  	border: none;
-  	background: #fff;
+    // box-shadow: 0 0 1px 0px #ddd, 4px 4px 0px 0px rgba(240, 240, 240, 1);
+
+    .col1 {
+  		padding: .75em 0;
+  	}
+
+    .col3 a {
+    	padding: 5px;
+    }
 
     td {
-      border: none;
-      padding-left: 0;
-      padding: 10px;
+			padding: .25em .75em;
+
+			td {
+				padding: 0;
+			}
     }
 
     tr {
-      border-bottom: 1px solid $light_grey_color;
+      border-bottom: 1px solid $light_grey;
 
       &.odd {
-      	background: #fff;
+      	background: $white;
       }
 
       &:last-child {
@@ -59,9 +97,10 @@ table {
     }
 
     &.wide {
-      td:first-child {
-        background: #fdfdfd;
-        border-right: 1px solid $light_grey_color;
+      > tbody > tr > td:first-child {
+				white-space: nowrap;
+        background: $very_light_grey;
+        border-right: 1px solid $light_grey;
         width: 20%;
       }
     }
@@ -70,36 +109,19 @@ table {
 
 input[type=submit],
 button {
-  background: $highlight_color;
-  border: #000;
-  color: #fff;
-  cursor: pointer;
-  padding: 10px 20px;
-
-  &:hover {
-    background: #000;
-  }
+  @extend %button;
 }
+
+
 
 input[type='text'],
 select {
-  border: solid 1px #ccc;
-  border-radius: 0;
-  cursor: pointer;
-  margin-left: 5px;
-  margin-right: 5px;
-  outline: 0;
-  padding: 10px;
-
-  &:hover,
-  &:active {
-    border-color: $highlight_color;
-  }
+  @extend %input;
 }
 
 select {
   -webkit-appearance: none;
-  background: #FFF url("http://www.scottgood.com/jsg/blog.nsf/images/arrowdown.gif") no-repeat calc(100% - 10px) 50%;
+  background: $white url("http://www.scottgood.com/jsg/blog.nsf/images/arrowdown.gif") no-repeat calc(100% - 10px) 50%;
   min-width: 53px;
   outline: none;
   padding-right: 30px;
@@ -113,7 +135,7 @@ svg.icon {
 }
 
 img.icon {
-	background: #fff;
+	background: $white;
 	height: 30px;
 	width: 30px;
   vertical-align: middle;

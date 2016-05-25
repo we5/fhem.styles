@@ -28,7 +28,7 @@
         td {
           a {
           	background: $highlight_color;
-          	color: #fff;
+          	color: $white;
           	margin-left: -11px;
           	padding-left: 21px;
           	position:relative;
@@ -62,7 +62,7 @@
           padding: 0;
 
           &.changed {
-            color: #ff0000;
+            color: $red;
           }
         }
       }
@@ -73,9 +73,9 @@
 
     // Rooms
     &.roomBlock3 {
-    	background: #fff;
-    	border-top: 1px solid $light_grey_color;
-    	border-bottom: 1px solid $light_grey_color;
+    	background: $white;
+    	border-top: 1px solid $light_grey;
+    	border-bottom: 1px solid $light_grey;
 
       .menu_Everything {
         margin-top: 2em;
@@ -91,12 +91,12 @@
       margin: 5px 0;
 
       tr td a {
-        color: #ccc;
+        color: $grey;
         font-size: 12px;
         padding: 5px 10px;
 
         &:hover {
-          color: #aaa;
+          color: $black;
         }
       }
     }
