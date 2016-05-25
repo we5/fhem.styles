@@ -19,9 +19,8 @@
   padding-bottom: 10px;
   padding-top: 10px;
 
-  select + input,
-  select + .slider_widget {
-    margin-left: 5px;
+  * {
+    margin-right: 5px;
   }
 
   & > form {
@@ -44,7 +43,6 @@
 
     &.internals {
       td[colspan="2"] {
-        display: none;
       }
     }
   }

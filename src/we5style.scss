@@ -27,9 +27,13 @@ button,
 
 // ELEMENTS
 
-pre.log {
+%log {
   font-family: monospace;
   font-size: 12px;
+}
+
+pre.log {
+  @extend %log;
   margin: 0;
 
   a[href] {
@@ -77,10 +81,11 @@ pre.log {
 }
 
 #content {
-	left: 230px;
-	position: absolute;
-	right: 20px;
-	top: 67px;
+  left: 230px;
+  padding-bottom: 5em;
+  position: absolute;
+  right: 20px;
+  top: 67px;
 }
 
 #right {
@@ -99,6 +104,10 @@ pre.log {
 
 #dist {
 	padding-top: 0.3em;
+}
+
+#console {
+  @extend %log;
 }
 
 @import 'lib/menu';
