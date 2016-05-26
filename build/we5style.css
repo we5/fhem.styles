@@ -114,6 +114,7 @@ pre.log a[href]:last-of-type { margin-top: 1em; }
 #menu table#room.roomBlock4, #menu table.room.roomBlock4 { margin: 5px 0; }
 #menu table#room.roomBlock4 tr td a, #menu table.room.roomBlock4 tr td a { color: #aaa; font-size: 12px; padding: 5px 10px; }
 #menu table#room.roomBlock4 tr td a:hover, #menu table.room.roomBlock4 tr td a:hover { color: #404040; }
+#menu .menu_Esszimmer, #menu .menu_Wohnzimmer, #menu .menu_Kueche, #menu .menu_Schlafzimmer, #menu .menu_Kinderzimmer { padding-left: 10px; }
 
 #hdr { background: #08c; border-bottom: solid 1px #007aba; height: 40px; left: 230px; overflow: hidden; position: fixed; right: 0px; top: 0px; z-index: 1000; }
 #hdr input { background: #007aba; border-left: solid 1px #fff; border-right: solid 1px #fff; border: none; color: #fff; height: 20px; margin: 0; width: 600px; }
