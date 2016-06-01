@@ -64,10 +64,10 @@ pre.log a[href]:last-of-type { margin-top: 1em; }
 
 .set, .attr { float: left; }
 
-.slider_widget, .colorpicker_hue { -webkit-user-select: none; user-select: none; outline: none; }
-.slider_widget .slider, .colorpicker_hue .slider { border-radius: 8px; background: #fff; outline: none; width: 250px; }
-.slider_widget .handle, .colorpicker_hue .handle { border: 2px solid; color: #aaa; cursor: pointer; height: 20px; line-height: 22px; position: relative; text-align: center; width: 50px; -moz-user-select: -moz-none; -ms-user-select: none; -webkit-user-select: none; user-select: none; }
-.slider_widget .handle:hover, .slider_widget .handle.handle:active, .colorpicker_hue .handle:hover, .colorpicker_hue .handle.handle:active { color: #08c; cursor: pointer; }
+.slider_widget, .colorpicker_widget { -webkit-user-select: none; -moz-user-select: -moz-none; -ms-user-select: none; user-select: none; border: 1px solid #aaa; outline: none; vertical-align: middle; }
+.slider_widget .slider, .colorpicker_widget .slider { -webkit-user-select: none; -moz-user-select: -moz-none; -ms-user-select: none; user-select: none; margin: 6px; background: #fff; outline: none; width: 250px; }
+.slider_widget .handle, .colorpicker_widget .handle { -webkit-user-select: none; -moz-user-select: -moz-none; -ms-user-select: none; user-select: none; border: 2px solid; color: #aaa; cursor: pointer; height: 20px; line-height: 22px; position: relative; text-align: center; width: 50px; }
+.slider_widget .handle:hover, .slider_widget .handle.handle:active, .colorpicker_widget .handle:hover, .colorpicker_widget .handle.handle:active { color: #08c; cursor: pointer; }
 
 .set .set { margin-bottom: 2px; margin-top: 3px; }
 
@@ -76,9 +76,8 @@ pre.log a[href]:last-of-type { margin-top: 1em; }
 .makeTable, .makeSelect { clear: both; }
 
 .makeSelect { border-bottom: solid 1px #efefef; border-top: solid 1px #efefef; margin: 2em 0; padding-bottom: 10px; padding-top: 10px; }
-.makeSelect * { margin-right: 5px; }
-.makeSelect > form { display: inline-block; }
-.makeSelect > form > * { display: inline-block; float: none; }
+.makeSelect form { display: inline-block; }
+.makeSelect form > * { display: inline-block; float: none; margin-right: 5px; }
 
 .makeTable { color: #08c; margin: 2em 0; }
 .makeTable table { color: #404040; margin-top: 1em; }
@@ -114,7 +113,7 @@ pre.log a[href]:last-of-type { margin-top: 1em; }
 #menu table#room.roomBlock4, #menu table.room.roomBlock4 { margin: 5px 0; }
 #menu table#room.roomBlock4 tr td a, #menu table.room.roomBlock4 tr td a { color: #aaa; font-size: 12px; padding: 5px 10px; }
 #menu table#room.roomBlock4 tr td a:hover, #menu table.room.roomBlock4 tr td a:hover { color: #404040; }
-#menu .menu_Esszimmer, #menu .menu_Wohnzimmer, #menu .menu_Kueche, #menu .menu_Schlafzimmer, #menu .menu_Kinderzimmer { padding-left: 10px; }
+#menu .menu_Esszimmer, #menu .menu_Wohnzimmer, #menu .menu_Kueche, #menu .menu_Schlafzimmer, #menu .menu_Kinderzimmer, #menu .menu_Waschkueche, #menu .menu_Studio, #menu .menu_Heizungsraum, #menu .menu_Homekit { padding-left: 10px; }
 
 #hdr { background: #08c; border-bottom: solid 1px #007aba; height: 40px; left: 230px; overflow: hidden; position: fixed; right: 0px; top: 0px; z-index: 1000; }
 #hdr input { background: #007aba; border-left: solid 1px #fff; border-right: solid 1px #fff; border: none; color: #fff; height: 20px; margin: 0; width: 600px; }
