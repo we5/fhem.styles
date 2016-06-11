@@ -1,3 +1,19 @@
+table.internals,
+table.attributes,
+table.assoc {
+  tr {
+    td:first-child {
+      a {
+        text-decoration: underline;
+
+        // &:after {
+        //   content: ">>"
+        // }
+      }
+    }
+  }
+}
+
 .ex {
   border: 1px solid $grey;
   color: $grey;

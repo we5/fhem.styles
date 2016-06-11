@@ -112,7 +112,13 @@ button {
   @extend %button;
 }
 
+button.dist {
+  background: none;
 
+  &:hover {
+    transform: scale(1.3);
+  }
+}
 
 input[type='text'],
 select {

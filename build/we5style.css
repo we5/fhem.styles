@@ -31,6 +31,9 @@ table.block tr.odd { background: #fff; }
 table.block tr:last-child { border: none; }
 table.block.wide > tbody > tr > td:first-child { white-space: nowrap; background: #fdfdfd; border-right: 1px solid #efefef; width: 20%; }
 
+button.dist { background: none; }
+button.dist:hover { transform: scale(1.3); }
+
 select { -webkit-appearance: none; background: #fff url("http://www.scottgood.com/jsg/blog.nsf/images/arrowdown.gif") no-repeat calc(100% - 10px) 50%; min-width: 53px; outline: none; padding-right: 30px; }
 
 svg, svg.icon { height: 30px; width: 30px; vertical-align: middle; }
@@ -70,6 +73,8 @@ pre.log a[href]:last-of-type { margin-top: 1em; }
 .slider_widget .handle:hover, .slider_widget .handle.handle:active, .colorpicker_widget .handle:hover, .colorpicker_widget .handle.handle:active { color: #08c; cursor: pointer; }
 
 .set .set { margin-bottom: 2px; margin-top: 3px; }
+
+table.internals tr td:first-child a, table.attributes tr td:first-child a, table.assoc tr td:first-child a { text-decoration: underline; }
 
 .ex { border: 1px solid #aaa; color: #aaa; font-size: 10px; max-height: 10em; overflow: scroll; padding: 10px; }
 
@@ -121,16 +126,16 @@ pre.log a[href]:last-of-type { margin-top: 1em; }
 /* Smartphones (landscape) ----------- */
 @media only screen and (min-width: 321px) { * { font-size: 16px; }
   .devType, h2, h3, h4 { font-size: 24px; }
-  svg, svg.icon { width: 20px; height: 20px; } }
+  svg, svg.icon, img.icon { width: 20px; height: 20px; } }
 /* Smartphones (portrait) ----------- */
 @media only screen and (max-width: 320px) { * { font-size: 16px; }
   .devType, h2, h3, h4 { font-size: 24px; }
-  svg, svg.icon { width: 26px; height: 26px; } }
+  svg, svg.icon, img.icon { width: 26px; height: 26px; } }
 /* iPads (landscape) ----------- */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) { * { font-size: 16px; }
   .devType, h2, h3, h4 { font-size: 24px; }
-  svg, svg.icon { width: 20px; height: 20px; } }
+  svg, svg.icon, img.icon { width: 20px; height: 20px; } }
 /* iPads (portrait) ----------- */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) { * { font-size: 16px; }
   .devType, h2, h3, h4 { font-size: 24px; }
-  svg, svg.icon { width: 26px; height: 26px; } }
+  svg, svg.icon, img.icon { width: 26px; height: 26px; } }
