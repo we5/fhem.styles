@@ -1,0 +1,23 @@
+remote:
+  host: "berry"
+  user: "pi"
+  path: "~/fhem/styles"
+behaviour:
+  uploadOnSave: true
+  syncDownOnOpen: true
+  forgetConsole: false
+  autoHideConsole: true
+  alwaysSyncAll: true
+option:
+  deleteFiles: true
+  exclude: [
+    ".DS_Store"
+    ".git*"
+    ".ruby*"
+    ".sass-cache"
+    ".sync-config.cson"
+    "scripts"
+    "src"
+    "Gemfile*"
+    "*.md"
+  ]
