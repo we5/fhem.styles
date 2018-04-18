@@ -1,8 +1,14 @@
-@import url(./fontawesome/css/font-awesome.css);
+@import 'lib/fonts';
 
-@font-face {
-	font-family: "OpenSans Light";
-	src: url('./fonts/Open_Sans/OpenSans-Light.ttf');
+// @import url("./fontawesome/css/font-awesome.css");
+//
+// @font-face {
+// 	font-family: "OpenSans Light";
+// 	src: url('./fonts/Open_Sans/OpenSans-Light.ttf');
+// }
+
+rect {
+	fill: #fff;
 }
 
 rect.border {
@@ -11,11 +17,11 @@ rect.border {
 }
 
 text {
-    font-family: 'OpenSans Light';
-    font-size: 12px;
+		font-family: 'dk Book', Arial, sans-serif;
+	  font-size: 10px;
 }
 text.title {
-    font-size: 16px;
+    font-size: 12px;
 }
 text.copy {
     text-decoration: underline;
@@ -34,7 +40,7 @@ polyline {
 
 .border {
     stroke: transparent;
-    fill: #2D3037;
+    fill: white;
 }
 
 .vgrid {

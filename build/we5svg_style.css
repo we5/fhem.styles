@@ -1,10 +1,15 @@
-@import url(./fontawesome/css/font-awesome.css);
-@font-face { font-family: "OpenSans Light"; src: url("./fonts/Open_Sans/OpenSans-Light.ttf"); }
+@charset "UTF-8";
+@font-face { font-family: "dk Book"; src: url("../fonts/MetaWebPro/MetaWebPro-Book.eot"); src: local("Ã¢ËœÂº"), url("../fonts/MetaWebPro/MetaWebPro-Book.woff") format("woff"); font-style: normal; font-weight: normal; }
+@font-face { font-family: "dk Book"; src: url("../fonts/MetaWebPro/MetaWebPro-Bold.eot"); src: local("Ã¢ËœÂº"), url("../fonts/MetaWebPro/MetaWebPro-Bold.woff") format("woff"); font-style: normal; font-weight: bold; }
+@font-face { font-family: "dk Cond"; src: url("../fonts/MetaWebPro/MetaWebPro-CondNormal.eot"); src: local("Ã¢ËœÂº"), url("../fonts/MetaWebPro/MetaWebPro-CondNormal.woff") format("woff"); font-style: normal; font-weight: normal; }
+@font-face { font-family: "dk Cond"; src: url("../fonts/MetaWebPro/MetaWebPro-CondBold.eot"); src: local("Ã¢ËœÂº"), url("../fonts/MetaWebPro/MetaWebPro-CondBold.woff") format("woff"); font-style: normal; font-weight: bold; }
+rect { fill: #fff; }
+
 rect.border { rx: 2px; ry: 2px; }
 
-text { font-family: 'OpenSans Light'; font-size: 12px; }
+text { font-family: 'dk Book', Arial, sans-serif; font-size: 10px; }
 
-text.title { font-size: 16px; }
+text.title { font-size: 12px; }
 
 text.copy { text-decoration: underline; stroke: none; fill: blue; }
 
@@ -12,7 +17,7 @@ text.paste { text-decoration: underline; stroke: none; fill: blue; }
 
 polyline { stroke: black; fill: none; }
 
-.border { stroke: transparent; fill: #2D3037; }
+.border { stroke: transparent; fill: white; }
 
 .vgrid { stroke: #61646C; stroke-dasharray: 2, 6; }
 

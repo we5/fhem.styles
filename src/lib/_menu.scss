@@ -1,3 +1,5 @@
+// main: ../we5style.scss
+
 #menu {
 	left: 10px;
 	position: absolute;
@@ -20,7 +22,7 @@
         a {
         	font-size: 16px;
         	margin: 0;
-        	padding: 10px;
+        	padding: 5px 10px;
         }
       }
 
@@ -34,12 +36,12 @@
           	position:relative;
 
             &:after {
-            	border-bottom: 18px solid transparent;
+            	border-bottom: 13px solid transparent;
             	border-left: 15px solid #0089c8;
-            	border-top: 18px solid transparent;
+            	border-top: 13px solid transparent;
             	content: " ";
             	height: 0;
-            	margin-top: -18px;
+            	margin-top: -13px;
             	position: absolute;
             	right: -15px;
             	top: 50%;
@@ -55,7 +57,7 @@
       margin-bottom: 1em;
 
       .menu_Save_config {
-        padding: 10px;
+        padding: 5px 10px;
 
         a {
           display: inline;
@@ -76,6 +78,12 @@
     	background: $white;
     	border-top: 1px solid $light_grey;
     	border-bottom: 1px solid $light_grey;
+
+			tr:first-child {
+				td:first-child {
+					padding-top: 5px;
+				}
+			}
 
       .menu_Everything {
         margin-top: 2em;
@@ -102,17 +110,61 @@
     }
   }
 
-
-	.menu_Esszimmer,
-	.menu_Wohnzimmer,
-	.menu_Kueche,
-	.menu_Schlafzimmer,
-	.menu_Kinderzimmer,
-	.menu_Waschkueche,
-	.menu_Studio,
-	.menu_Heizungsraum,
-	.menu_Homekit
-	{
+	div[class*="menu_"] {
 		padding-left: 10px;
+
+		&.menu_Tablet_UI,
+		&.menu_Wolfsweide,
+		&.menu_Flur,
+		&.menu_EG,
+		&.menu_OG,
+		&.menu_UG,
+		&.menu_Keller,
+		&.menu_Aussen,
+		&.menu_System,
+		&.menu_Everything,
+		&.x {
+			padding-left: 0;
+		}
 	}
+
+	.roomBlock4 div[class*="menu_"] {
+		padding-left: 0;
+	}
+
+	.menu_Everything,
+	.menu_HUEDevice,
+	.menu_Homekit,
+	.menu_HomekitGuests,
+	.menu_LIGHTIFY,
+	.menu_System,
+	.menu_ZWave
+	{
+		a {
+			color: $grey;
+
+			&:hover {
+				color: $black;
+			}
+		}
+	}
+
+	.menu_System
+	{
+		margin-top: 2em;
+	}
+
+
+	.menu_Everything {
+		a {
+			* {
+				display: none;
+			}
+
+			span {
+				display: block
+			}
+		}
+	}
+
 }

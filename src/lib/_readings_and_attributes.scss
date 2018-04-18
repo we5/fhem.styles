@@ -1,6 +1,9 @@
 table.internals,
+table.readings,
 table.attributes,
 table.assoc {
+  table-layout: fixed;
+
   tr {
     td:first-child {
       a {
@@ -10,6 +13,18 @@ table.assoc {
         //   content: ">>"
         // }
       }
+    }
+  }
+}
+
+table.readings,
+table.attributes,
+table.assoc {
+  td:last-child {
+    width: 10em;
+
+    div, a {
+      color: $grey;
     }
   }
 }
@@ -43,6 +58,11 @@ table.assoc {
       float: none;
       margin-right: 5px;
     }
+  }
+
+  select.set,
+  select.get {
+    width: 15em
   }
 }
 

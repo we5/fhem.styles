@@ -1,3 +1,5 @@
+// compileCompact: ../build/$1.css
+
 @import 'lib/variables';
 
 @import 'lib/fonts';
@@ -27,6 +29,19 @@ button,
 
 // ELEMENTS
 
+img {
+  &.Zoom-out,
+  &.Zoom-in,
+  &.Prev,
+  &.Next {
+    width: 11px;
+  }
+}
+
+rect {
+	fill: #fff;
+}
+
 %log {
   font-family: monospace;
   font-size: 12px;
@@ -47,6 +62,16 @@ pre.log {
     &:last-of-type {
       margin-top: 1em;
     }
+  }
+}
+
+.devType {
+  color: $highlight_color;
+  font-family: 'dk Cond';
+
+  a {
+    color: inherit;
+    display: block;
   }
 }
 
@@ -125,12 +150,12 @@ and (min-width : 321px) {
 	  font-size: 24px;
 	}
 
-	svg,
-	svg.icon,
-  img.icon {
-		width: 20px;
-		height: 20px;
-	}
+	// svg,
+	// svg.icon,
+  // img.icon {
+	// 	width: 20px;
+	// 	height: 20px;
+	// }
 }
 
 /* Smartphones (portrait) ----------- */
@@ -145,12 +170,12 @@ and (max-width : 320px) {
    	font-size: 24px;
 	}
 
-	svg,
-	svg.icon,
-  img.icon {
-		width: 26px;
-		height: 26px;
-	}
+	// svg,
+	// svg.icon,
+  // img.icon {
+	// 	width: 26px;
+	// 	height: 26px;
+	// }
 }
 
 /* iPads (landscape) ----------- */
@@ -167,12 +192,12 @@ and (orientation : landscape) {
    	font-size: 24px;
 	}
 
-	svg,
-	svg.icon,
-  img.icon {
-		width: 20px;
-		height: 20px;
-	}
+	// svg,
+	// svg.icon,
+  // img.icon {
+	// 	width: 20px;
+	// 	height: 20px;
+	// }
 }
 
 /* iPads (portrait) ----------- */

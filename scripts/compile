@@ -1,3 +1,4 @@
 #! /bin/sh
 
-sass --scss --style=compact --sourcemap=none src/* build/*
+sass --scss --style=compact --sourcemap=none src/we5style.scss build/we5style.css
+sass --scss --style=compact --sourcemap=none src/we5svg_style.scss build/we5svg_style.css

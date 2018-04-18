@@ -62,14 +62,25 @@ a {
 }
 
 table {
-  border-collapse: collapse;
 	width: 100%;
+  border-collapse: collapse;
+
+  th, td {
+    overflow: hidden;
+    vertical-align: baseline;
+  }
+
+  tfoot {
+    td {
+      border-top: 1px solid $black;
+    }
+  }
 
   &.block {
     // box-shadow: 0 0 1px 0px #ddd, 4px 4px 0px 0px rgba(240, 240, 240, 1);
 
     .col1 {
-  		padding: .75em 0;
+  		padding: .25em 0;
   	}
 
     .col3 a {
@@ -80,7 +91,11 @@ table {
 			padding: .25em .75em;
 
 			td {
-				padding: 0;
+				padding: .125em .5em;
+
+        &:first-child {
+          padding-left: 0;
+        }
 			}
     }
 
@@ -98,10 +113,16 @@ table {
 
     &.wide {
       > tbody > tr > td:first-child {
-				white-space: nowrap;
+				// white-space: nowrap;
         background: $very_light_grey;
         border-right: 1px solid $light_grey;
-        width: 20%;
+        width: 14em;
+
+        > div {
+          // overflow: hidden;
+          // text-overflow: ellipsis;
+          word-break: break-word;
+        }
       }
     }
   }
@@ -135,9 +156,10 @@ select {
 
 svg,
 svg.icon {
-	height: 30px;
-	width: 30px;
+	height: 1em;
+  margin-top: -0.2em;
   vertical-align: middle;
+  width: 1em;
 }
 
 img.icon {
@@ -145,4 +167,19 @@ img.icon {
 	height: 30px;
 	width: 30px;
   vertical-align: middle;
+}
+
+pre {
+  font-family: monospace;
+  font-size: 11px;
+  overflow: scroll;
+}
+
+.dname {
+  // overflow: hidden;
+  // text-overflow: ellipsis;
+}
+
+.dval {
+  word-break: break-word;
 }
