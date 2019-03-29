@@ -113,9 +113,9 @@ table {
 
     &.wide {
       > tbody > tr > td:first-child {
-				// white-space: nowrap;
         background: $very_light_grey;
         border-right: 1px solid $light_grey;
+        min-width: 14em;
         width: 14em;
 
         > div {
@@ -169,10 +169,16 @@ img.icon {
   vertical-align: middle;
 }
 
-pre {
+pre,
+textarea {
   font-family: monospace;
   font-size: 11px;
   overflow: scroll;
+}
+
+textarea {
+  width: 100%;
+  min-height: 30em;
 }
 
 .dname {

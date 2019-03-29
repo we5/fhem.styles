@@ -132,7 +132,13 @@ pre.log {
 }
 
 #console {
-  @extend %log;
+  &, * {
+    @extend %log;
+  }
+
+  * {
+    color: $orange;
+  }
 }
 
 @import 'lib/menu';
