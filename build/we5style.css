@@ -209,7 +209,7 @@ table.readings td:last-child div, table.readings td:last-child a, table.attribut
 
 #menu div[class*="menu_"] { padding-left: 10px; }
 
-#menu div[class*="menu_"].menu_Tablet_UI, #menu div[class*="menu_"].menu_Wolfsweide, #menu div[class*="menu_"].menu_Flur, #menu div[class*="menu_"].menu_EG, #menu div[class*="menu_"].menu_OG, #menu div[class*="menu_"].menu_UG, #menu div[class*="menu_"].menu_Keller, #menu div[class*="menu_"].menu_Aussen, #menu div[class*="menu_"].menu_System, #menu div[class*="menu_"].menu_Everything, #menu div[class*="menu_"].x { padding-left: 0; }
+#menu div[class*="menu_"].menu_Tablet_UI, #menu div[class*="menu_"].menu_Wolfsweide, #menu div[class*="menu_"].menu_Startseite, #menu div[class*="menu_"].menu_Ubersicht, #menu div[class*="menu_"].menu_Flur, #menu div[class*="menu_"].menu_EG, #menu div[class*="menu_"].menu_OG, #menu div[class*="menu_"].menu_UG, #menu div[class*="menu_"].menu_Keller, #menu div[class*="menu_"].menu_Aussen, #menu div[class*="menu_"].menu_System, #menu div[class*="menu_"].menu_Everything, #menu div[class*="menu_"].x { padding-left: 0; }
 
 #menu .roomBlock4 div[class*="menu_"] { padding-left: 0; }
 
