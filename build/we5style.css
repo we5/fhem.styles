@@ -185,37 +185,37 @@ table.readings td:last-child div, table.readings td:last-child a, table.attribut
 
 #menu table#room tr.sel td a:after, #menu table.room tr.sel td a:after { border-bottom: 13px solid transparent; border-left: 15px solid #0089c8; border-top: 13px solid transparent; content: " "; height: 0; margin-top: -13px; position: absolute; right: -15px; top: 50%; width: 0; }
 
-#menu table#room.roomBlock1, #menu table.room.roomBlock1 { margin-bottom: 1em; }
+#menu > table > tbody > tr:nth-child(1) .room { margin-bottom: 1em; }
 
-#menu table#room.roomBlock1 .menu_Save_config, #menu table.room.roomBlock1 .menu_Save_config { padding: 5px 10px; }
+#menu > table > tbody > tr:nth-child(1) .menu_Save_config { padding: 5px 10px; }
 
-#menu table#room.roomBlock1 .menu_Save_config a, #menu table.room.roomBlock1 .menu_Save_config a { display: inline; padding: 0; }
+#menu > table > tbody > tr:nth-child(1) .menu_Save_config a { display: inline; padding: 0; }
 
-#menu table#room.roomBlock1 .menu_Save_config a.changed, #menu table.room.roomBlock1 .menu_Save_config a.changed { color: #f00; }
+#menu > table > tbody > tr:nth-child(1) .menu_Save_config a.changed { color: #f00; }
 
-#menu table#room.roomBlock3, #menu table.room.roomBlock3 { background: #fff; border-top: 1px solid #efefef; border-bottom: 1px solid #efefef; }
+#menu > table > tbody > tr:nth-last-child(2) { background: #fff; border-top: 1px solid #efefef; border-bottom: 1px solid #efefef; }
 
-#menu table#room.roomBlock3 tr:first-child td:first-child, #menu table.room.roomBlock3 tr:first-child td:first-child { padding-top: 5px; }
+#menu > table > tbody > tr:nth-last-child(2) tr:first-child td:first-child { padding-top: 5px; }
 
-#menu table#room.roomBlock3 .menu_Everything, #menu table.room.roomBlock3 .menu_Everything { margin-top: 2em; }
+#menu > table > tbody > tr:nth-last-child(2) .menu_Everything { margin-top: 2em; }
 
-#menu table#room.roomBlock3 .menu_Everything a img, #menu table.room.roomBlock3 .menu_Everything a img { display: none; }
+#menu > table > tbody > tr:nth-last-child(2) .menu_Everything a img { display: none; }
 
-#menu table#room.roomBlock4, #menu table.room.roomBlock4 { margin: 5px 0; }
+#menu > table > tbody > tr:last-child { margin: 5px 0; }
 
-#menu table#room.roomBlock4 tr td a, #menu table.room.roomBlock4 tr td a { color: #aaa; font-size: 12px; padding: 5px 10px; }
+#menu > table > tbody > tr:last-child tr td a { color: #aaa; font-size: 12px; padding: 5px 10px; }
 
-#menu table#room.roomBlock4 tr td a:hover, #menu table.room.roomBlock4 tr td a:hover { color: #404040; }
+#menu > table > tbody > tr:last-child tr td a:hover { color: #404040; }
+
+#menu > table > tbody > tr:last-child .room div[class*="menu_"] { padding-left: 0; }
 
 #menu div[class*="menu_"] { padding-left: 10px; }
 
-#menu div[class*="menu_"].menu_Tablet_UI, #menu div[class*="menu_"].menu_Wolfsweide, #menu div[class*="menu_"].menu_Startseite, #menu div[class*="menu_"].menu_Ubersicht, #menu div[class*="menu_"].menu_Flur, #menu div[class*="menu_"].menu_EG, #menu div[class*="menu_"].menu_OG, #menu div[class*="menu_"].menu_UG, #menu div[class*="menu_"].menu_Keller, #menu div[class*="menu_"].menu_Aussen, #menu div[class*="menu_"].menu_System, #menu div[class*="menu_"].menu_Everything, #menu div[class*="menu_"].x { padding-left: 0; }
+#menu .menu_Aussen, #menu .menu_EG, #menu .menu_Everything, #menu .menu_Flur, #menu .menu_Keller, #menu .menu_OG, #menu .menu_Startseite, #menu .menu_System, #menu .menu_Tablet_UI, #menu .menu_Ubersicht, #menu .menu_UG, #menu .menu_Wolfsweide, #menu .x { padding-left: 0 !important; }
 
-#menu .roomBlock4 div[class*="menu_"] { padding-left: 0; }
+#menu .menu_Bewohner a, #menu .menu_Debugging a, #menu .menu_Everything a, #menu .menu_FBDECT a, #menu .menu_Heizung a, #menu .menu_Homekit a, #menu .menu_HomekitGuests a, #menu .menu_HUEDevice a, #menu .menu_LIGHTIFY a, #menu .menu_Musik a, #menu .menu_Reports a, #menu .menu_Services a, #menu .menu_System a, #menu .menu_Unsorted a, #menu .menu_ZWave a, #menu .x a { color: #aaa; }
 
-#menu .menu_Everything a, #menu .menu_HUEDevice a, #menu .menu_Homekit a, #menu .menu_HomekitGuests a, #menu .menu_LIGHTIFY a, #menu .menu_System a, #menu .menu_ZWave a { color: #aaa; }
-
-#menu .menu_Everything a:hover, #menu .menu_HUEDevice a:hover, #menu .menu_Homekit a:hover, #menu .menu_HomekitGuests a:hover, #menu .menu_LIGHTIFY a:hover, #menu .menu_System a:hover, #menu .menu_ZWave a:hover { color: #404040; }
+#menu .menu_Bewohner a:hover, #menu .menu_Debugging a:hover, #menu .menu_Everything a:hover, #menu .menu_FBDECT a:hover, #menu .menu_Heizung a:hover, #menu .menu_Homekit a:hover, #menu .menu_HomekitGuests a:hover, #menu .menu_HUEDevice a:hover, #menu .menu_LIGHTIFY a:hover, #menu .menu_Musik a:hover, #menu .menu_Reports a:hover, #menu .menu_Services a:hover, #menu .menu_System a:hover, #menu .menu_Unsorted a:hover, #menu .menu_ZWave a:hover, #menu .x a:hover { color: #404040; }
 
 #menu .menu_System { margin-top: 2em; }
 

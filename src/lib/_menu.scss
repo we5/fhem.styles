@@ -51,33 +51,37 @@
         }
       }
     }
+  }
 
-    // Save config link
-    &.roomBlock1 {
-      margin-bottom: 1em;
+	> table > tbody > {
+		// Save config link
+	  tr:nth-child(1) {
+	    .room {
+				margin-bottom: 1em;
+			}
 
-      .menu_Save_config {
-        padding: 5px 10px;
+	    .menu_Save_config {
+	      padding: 5px 10px;
 
-        a {
-          display: inline;
-          padding: 0;
+	      a {
+	        display: inline;
+	        padding: 0;
 
-          &.changed {
-            color: $red;
-          }
-        }
-      }
-    }
+	        &.changed {
+	          color: $red;
+	        }
+	      }
+	    }
+	  }
 
-    // Tablet UI, etc.
-    &.roomBlock2 {}
+	  // Tablet UI, etc.
+	  tr:nth-child(2) {}
 
-    // Rooms
-    &.roomBlock3 {
-    	background: $white;
-    	border-top: 1px solid $light_grey;
-    	border-bottom: 1px solid $light_grey;
+	  // Rooms
+	  tr:nth-last-child(2) {
+	  	background: $white;
+	  	border-top: 1px solid $light_grey;
+	  	border-bottom: 1px solid $light_grey;
 
 			tr:first-child {
 				td:first-child {
@@ -85,63 +89,71 @@
 				}
 			}
 
-      .menu_Everything {
-        margin-top: 2em;
+	    .menu_Everything {
+	      margin-top: 2em;
 
-        a img {
-          display: none;
-        }
-      }
-    }
+	      a img {
+	        display: none;
+	      }
+	    }
+	  }
 
-    // System links
-    &.roomBlock4 {
-      margin: 5px 0;
+	  // System links
+	  tr:last-child {
+	    margin: 5px 0;
 
-      tr td a {
-        color: $grey;
-        font-size: 12px;
-        padding: 5px 10px;
+	    tr td a {
+	      color: $grey;
+	      font-size: 12px;
+	      padding: 5px 10px;
 
-        &:hover {
-          color: $black;
-        }
-      }
-    }
-  }
+	      &:hover {
+	        color: $black;
+	      }
+	    }
+
+			.room div[class*="menu_"] {
+				padding-left: 0;
+			}
+	  }
+	}
 
 	div[class*="menu_"] {
 		padding-left: 10px;
-
-		&.menu_Tablet_UI,
-		&.menu_Wolfsweide,
-		&.menu_Startseite,
-		&.menu_Ubersicht,
-		&.menu_Flur,
-		&.menu_EG,
-		&.menu_OG,
-		&.menu_UG,
-		&.menu_Keller,
-		&.menu_Aussen,
-		&.menu_System,
-		&.menu_Everything,
-		&.x {
-			padding-left: 0;
-		}
 	}
 
-	.roomBlock4 div[class*="menu_"] {
-		padding-left: 0;
-	}
-
+	.menu_Aussen,
+	.menu_EG,
 	.menu_Everything,
-	.menu_HUEDevice,
+	.menu_Flur,
+	.menu_Keller,
+	.menu_OG,
+	.menu_Startseite,
+	.menu_System,
+	.menu_Tablet_UI,
+	.menu_Ubersicht,
+	.menu_UG,
+	.menu_Wolfsweide,
+	.x {
+		padding-left: 0 !important;
+	}
+
+	.menu_Bewohner,
+	.menu_Debugging,
+	.menu_Everything,
+	.menu_FBDECT,
+	.menu_Heizung,
 	.menu_Homekit,
 	.menu_HomekitGuests,
+	.menu_HUEDevice,
 	.menu_LIGHTIFY,
+	.menu_Musik,
+	.menu_Reports,
+	.menu_Services,
 	.menu_System,
-	.menu_ZWave
-	{
+	.menu_Unsorted,
+	.menu_ZWave,
+	.x {
 		a {
 			color: $grey;
 
@@ -151,8 +163,7 @@
 		}
 	}
 
-	.menu_System
-	{
+	.menu_System {
 		margin-top: 2em;
 	}
 
