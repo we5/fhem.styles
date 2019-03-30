@@ -225,7 +225,9 @@ table.readings td:last-child div, table.readings td:last-child a, table.attribut
 
 #hdr { background: #08c; border-bottom: solid 1px #007aba; height: 40px; left: 230px; overflow: hidden; position: fixed; right: 0px; top: 0px; z-index: 1000; }
 
-#hdr input { background: #007aba; border-left: solid 1px #fff; border-right: solid 1px #fff; border: none; color: #fff; height: 20px; margin: 0; width: 600px; }
+#hdr input { background: #007aba; border-left: solid 1px #fff; border-right: solid 1px #fff; border: none; color: #fff; font-family: monospace; font-size: 14px; height: 20px; margin: 0; width: 600px; }
+
+#hdr input:focus { background: #009bed; box-shadow: #007aba 0px -10px 10px -5px inset; }
 
 /* Smartphones (landscape) ----------- */
 @media only screen and (min-width: 321px) { * { font-size: 16px; }

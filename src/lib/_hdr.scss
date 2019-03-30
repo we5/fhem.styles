@@ -1,9 +1,11 @@
+// main: ../we5style.scss
 //
 // Command line
 //
 #hdr {
   background: $highlight_color;
   border-bottom: solid 1px $blue_darker;
+
   height: 40px;
   left: 230px;
   overflow: hidden;
@@ -17,9 +19,16 @@
   	border-left: solid 1px $white;
   	border-right: solid 1px $white;
   	border: none;
-  	color: $white;
-  	height: 20px;
-  	margin: 0;
-  	width: 600px;
+    color: $white;
+    font-family: monospace;
+    font-size: 14px;
+    height: 20px;
+    margin: 0;
+    width: 600px;
+
+    &:focus {
+      background: lighten($blue_darker, 10);
+      box-shadow: #007aba 0px -10px 10px -5px inset;
+    }
   }
 }
